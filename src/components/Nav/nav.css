@@ -1,0 +1,13 @@
+nav * {
+  color: white;
+  font-size: x-large;
+}
+
+.nav-link:hover {
+  color: #88c9f9 !important;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: inherit;
+}
