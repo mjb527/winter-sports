@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
+
+import Donate from './Pages/Donate/donate';
 
 // components
 import Nav from './components/Nav/nav';
@@ -18,6 +21,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/donate">
+            <Donate />
           </Route>
         </Switch>
       <Footer />
