@@ -8,12 +8,12 @@ function OrgRow(props) {
 
     <div id={"org_" + id} className="row py-4 align-items-center" style={{ "borderTop": "1px solid black" }}>
 
-      <div className="col-4">
+      <div className="col-md-4 col-sm-12">
         <img src={image_url} alt={ name + " logo" } style={{ "width": "100%" }}/>
       </div>
 
-      <div className="col-8">
-        <a href={url}><h5>{name}</h5></a>
+      <div className="col-md-8 col-sm-12">
+        <h5><a className="text-blue-med" href={url}>{name}</a></h5>
         <div>{description}</div>
       </div>
 

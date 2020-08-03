@@ -16,8 +16,8 @@ function HomeContent() {
 
       <div className="mb-4">
         Now that we're older, it can be difficult to enjoy the cold and the weather that comes with it. Shoveling snow and driving during a blizzard can be
-        near traumatizing. However, picking up a winter hobby can be a great way to relax, exercise, and make awesome memories. Among the most popular activities
-        are skiing, snowboarding, and ice skating, all of which can be challenging, but also great fun when you learn the ins and outs!
+        less than fun to say the least. However, picking up a winter hobby can be a great way to relax, exercise, and make awesome memories. Some popular activities
+        are skiing, snowboarding, and ice skating, plus so much more! All of these can be challenging, but also great fun when you learn the ins and outs!
       </div>
 
       <div className="mb-4">

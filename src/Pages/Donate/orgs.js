@@ -25,7 +25,7 @@ module.exports = {
     {
       "id": 3,
       "name": "Wold Wildlife Fund",
-      "description": "Greenpeace is a global, independent campaigning organization that uses peaceful protest and creative communication to expose global environmental problems and promote solutions that are essential to a green and peaceful future.",
+      "description": "As the world’s leading conservation organization, WWF works in more than 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live. WWF works to help local communities conserve the natural resources they depend upon; transform markets and policies toward sustainability; and protect and restore species and their habitats. Their efforts ensure that the value of nature is reflected in decision-making from a local to a global scale. ",
       "url": "https://www.worldwildlife.org/",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/WWF_logo_%28Text_only%29.svg/262px-WWF_logo_%28Text_only%29.svg.png"
     },

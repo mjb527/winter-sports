@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import LeftText from '../Nav/leftText';
+import LeftText from '../LeftText/leftText';
 
 function Footer() {
   return(
@@ -15,23 +15,12 @@ function Footer() {
          <LeftText />
       </a>
 
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+        <ul className="ml-auto d-inline-flex">
 
-      <div className="collapse navbar-collapse" id="nav-menu">
-
-        <ul className="navbar-nav ml-auto">
-
-          <li className="nav-item mr-4"><Link className="nav-link" to="/learn">Learn</Link></li>
-          <li className="nav-item mr-4"><Link className="nav-link" to="/donate">Donate</Link></li>
+          <li className="nav-item mr-4"><Link className="nav-link text-blue" to="/learn">Learn</Link></li>
+          <li className="nav-item mr-4"><Link className="nav-link text-blue" to="/donate">Donate</Link></li>
 
         </ul>
-
-      </div>
-
-
-
 
     </nav>
 
