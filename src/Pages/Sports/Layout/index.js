@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import SportWrapper from '../SportWrapper';
 
-import SportNotFound from '../SportNotFound';
+import SportNotFound from '../../PageNotFound';
 
 function Sport() {
 
@@ -20,9 +20,7 @@ function Sport() {
   }
   else {
     return (
-      <div style={{ "minHeight": "90vh", "overflowX": "hidden"}} className="d-flex align-items-start justify-content-center container pt-5">
         <SportNotFound />
-      </div>
     );
   }
 }
