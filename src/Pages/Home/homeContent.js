@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomeContent() {
   return(
@@ -35,7 +36,7 @@ function HomeContent() {
       </div>
 
       <div>
-        If you find you like the outdoors, please consider donating to organizations such as <a href="https://protectourwinters.org/">Protect our Winters</a>, the <a href="https://www.sierraclub.org/">Sierra Club</a>, or any other non-profits that help
+        If you find you like the outdoors, please consider donating to organizations on our <Link to="" className="text-blue-med">Donate</Link> page or any other organizations that help
         protect nature from pollution and destruction. Please also consider supporting politicians that are pushing for green-legislation.
         We only have one world, please help us protect it.
       </div>

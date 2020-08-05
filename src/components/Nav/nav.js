@@ -24,11 +24,13 @@ function Nav() {
           <ul className="navbar-nav ml-auto">
 
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+
+
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Learn
               </a>
-              <div className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+              <div className="dropdown-menu bg-secondary dropdown-menu-right dropdown-menu-md-left" aria-labelledby="navbarDropdown">
                 <Link className="dropdown-item" to="/sports/ski">Skiing</Link>
                 <Link className="dropdown-item" to="/sports/snowboard">Snowboarding</Link>
               </div>
@@ -37,15 +39,20 @@ function Nav() {
               <a className="nav-link dropdown-toggle" href="#" id="donateDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Donate
               </a>
-              <div className="dropdown-menu bg-secondary" aria-labelledby="donateDropdown">
-                <em>We are unaffiliated with any of the following charities</em>
-                <li className="dropdown-item"><Link className="dropdown-item" to="/donate">About Donating</Link></li>
-                <li className="dropdown-item"><a target="_blank" rel="noreferrer noopener" className="nav-link" href="https://protectourwinters.org/">Protect Our Winters</a></li>
-                <li className="dropdown-item"><a target="_blank" rel="noreferrer noopener" className="nav-link" href="https://www.sierraclub.org/">Sierra Club</a></li>
-                <li className="dropdown-item"><a target="_blank" rel="noreferrer noopener" className="nav-link" href="https://www.greenpeace.org/">Greenpeace</a></li>
-                <li className="dropdown-item"><a target="_blank" rel="noreferrer noopener" className="nav-link" href="https://www.worldwildlife.org/">Wold Wildlife Fund</a></li>
+              <div data-display="static" className="dropdown-menu bg-secondary dropdown-menu-right dropdown-menu-md-left" aria-labelledby="donateDropdown">
+                <div className="pl-2"><em>We are not affiliated with any of the following charities.</em></div>
+
+                <div className="dropdown-divider mx-2" style={{ 'borderColor': 'black' }} />
+
+                <Link className="dropdown-item" to="/donate">About Donating</Link>
+                <a target="_blank" className="dropdown-item" rel="noreferrer noopener" href="https://protectourwinters.org/">Protect Our Winters</a>
+                <a target="_blank" className="dropdown-item" rel="noreferrer noopener" href="https://www.sierraclub.org/">Sierra Club</a>
+                <a target="_blank" className="dropdown-item" rel="noreferrer noopener" href="https://www.greenpeace.org/">Greenpeace</a>
+                <a target="_blank" className="dropdown-item" rel="noreferrer noopener" href="https://www.worldwildlife.org/">Wold Wildlife Fund</a>
               </div>
             </li>
+
+
 
           </ul>
 

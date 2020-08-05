@@ -17,10 +17,19 @@ a.text-blue-med:hover {
 
 }
 
+.text-blue-med-no-hov {
+  color: #0099cc;
+}
+
 .transparent-dark {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 li {
   list-style: none;
+}
+
+.text-border {
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
 }
