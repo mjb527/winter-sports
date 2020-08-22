@@ -1,0 +1,18 @@
+{
+  'skiing' : {
+    'history' : 'skiing history',
+    'equipment' : [
+      'Skis',
+      'Ski Boots and Bindings',
+      'Helmet (optional, highly recommended)',
+    ],
+    'dress_level' : 3,
+    'basics' : ''
+  },
+  'snowboard' : {
+
+  },
+  'ice-skate' : {
+
+  }
+}
