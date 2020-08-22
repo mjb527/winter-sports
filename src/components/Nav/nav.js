@@ -33,6 +33,7 @@ function Nav() {
               <div className="dropdown-menu bg-secondary dropdown-menu-right dropdown-menu-md-left" aria-labelledby="navbarDropdown">
                 <Link className="dropdown-item" to="/sports/ski">Skiing</Link>
                 <Link className="dropdown-item" to="/sports/snowboard">Snowboarding</Link>
+                <Link className="dropdown-item" to="/sports/ice-skate">Ice Skate</Link>
               </div>
             </li>
             <li className="nav-item dropdown">

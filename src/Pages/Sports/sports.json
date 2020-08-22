@@ -1,18 +1,33 @@
 {
-  'skiing' : {
-    'history' : 'skiing history',
-    'equipment' : [
-      'Skis',
-      'Ski Boots and Bindings',
-      'Helmet (optional, highly recommended)',
-    ],
-    'dress_level' : 3,
-    'basics' : ''
-  },
-  'snowboard' : {
-
-  },
-  'ice-skate' : {
-
+  "sports" : {
+    "ski" : {
+      "history" : "skiing history",
+      "equipment" : [
+        "Skis",
+        "Ski Boots and Bindings",
+        "Helmet (optional, but highly recommended)",
+        "Ski poles (optional)"
+      ],
+      "dress_level" : 3,
+      "basics" : "coming soon to a website near you"
+    },
+    "snowboard" : {
+      "history" : "snowboard history",
+      "equipment" : [
+        "Snowboard",
+        "Snowboard Boots and bindings",
+        "Helment (optional, but highly recommended)"
+      ],
+      "dress_level" : 3,
+      "basics" : "coming soon to a website near you"
+    },
+    "ice-skate" : {
+      "history" : "iceskating history",
+      "equipment" : [
+        "ice-skates"
+      ],
+      "dress_level" : 1,
+      "basics" : "ice skating basics"
+    }
   }
 }
