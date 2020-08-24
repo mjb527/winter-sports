@@ -1,7 +1,7 @@
 {
   "sports" : {
     "ski" : {
-      "history" : "skiing history",
+      "history" : "<p>skiing history</p>",
       "equipment" : [
         "Skis",
         "Ski Boots and Bindings",

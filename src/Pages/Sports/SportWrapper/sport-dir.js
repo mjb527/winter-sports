@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 
 function SportDir(props) {
 
-  const handleClick = props.changeState;
-
-  const white = { 'color' : 'white' }
+  const white = { 'color' : 'white' };
+  const action = props.action
 
   return(
     <div className="blue text-white h-100">
@@ -14,17 +13,17 @@ function SportDir(props) {
 
     <h4 className="pt-5"><u>Sports</u></h4>
     <ul>
-      <li className=""><Link to="/sports/ski"><h6 style={ white }>Ski</h6></Link></li>
-      <li className=""><Link to="/sports/snowboard"><h6 style={ white }>Snowboard</h6></Link></li>
-      <li className=""><Link to="/sports/ice-skate"><h6 style={ white }>Ice Skate</h6></Link></li>
+      <li><Link className="pointer" to="/sports/ski"><h6 style={ white }>Ski</h6></Link></li>
+      <li><Link className="pointer"to="/sports/snowboard"><h6 style={ white }>Snowboard</h6></Link></li>
+      <li><Link className="pointer" to="/sports/ice-skate"><h6 style={ white }>Ice Skate</h6></Link></li>
     </ul>
 
     <h4 className="mt-2"><u>Topics</u></h4>
 
     <ul>
-      <li><a onClick={handleClick('history')}><h6>History</h6></a></li>
-      <li><a onClick={handleClick('basics')}><h6>Basics</h6></a></li>
-      <li><a onClick={handleClick('dress')}><h6>How To Dress</h6></a></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('history')}>History</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('basics')}>Basics</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('dress_level')}>How To Dress</h6></li>
     </ul>
     </div>
 

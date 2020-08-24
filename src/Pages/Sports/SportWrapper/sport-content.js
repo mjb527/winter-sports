@@ -1,21 +1,39 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
-import { sports as SportsData } from "../sports.json";
+import Dress from '../../../components/Dress';
+
+const classes = "text-blue-med-no-hov full-height";
 
 function SportContent(props) {
 
-  const { sport } = useParams();
-  const sport_data = SportsData[sport];
+  const sport = props.sport;
+  const rawSportData = props.sportData;
 
-  const { page } = props;
+  const component = getComponents(rawSportData)
+
+  // const sportData = buildHTML(rawSportData);
 
   return(
-    <div className="blue full-height">
-
-      { sport_data[page] }
-
+    <div>
+      <h2 className={classes}>Learn to {sport}</h2>
+      {component}
     </div>
   );
+}
+
+// take the passed array of strings (html)
+// and convert it to html
+function buildHTML(lines) {
+
+  return lines;
+
+}
+
+// we can render different components depending on the state
+// if a number, we are getting the Dress component
+// otherwise, parse the passed array of strings and build the html
+function getComponents(rsd) {
+  if(typeof rsd === 'number') return <div className={classes}><Dress className={classes} dress_level={rsd} /></div>;
+  else return <div className={classes} dangerouslySetInnerHTML={{__html: buildHTML(rsd) }} />;
 }
 
 export default SportContent

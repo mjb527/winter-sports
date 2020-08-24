@@ -33,3 +33,12 @@ li {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
