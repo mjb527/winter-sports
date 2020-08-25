@@ -1,4 +1,8 @@
 
+body {
+  overflow-x: hidden;
+}
+
 .blue {
   background-color: #88c9f9;
 }

@@ -6,7 +6,7 @@ function Dress(props) {
     case 1:
       return(
         <div>
-          <h4>Light Clothing</h4>
+          <h4>You Can Wear Light Clothing!</h4>
           <div className="my-2">
             Due to the likelihood of little and threat of hypothermia and frostbite, you may want to consider light clothing. This can include a coat or jacket, gloves, and warmer pants. Understanding where you
             are going and what the most likely temperature, wind chill, and weather conditions is of course a greate idea, but there is no need to go over the top with your clothing. If it seems the conditions are
@@ -17,7 +17,7 @@ function Dress(props) {
     case 2:
       return(
         <div>
-          <h4>Medium Clothing</h4>
+          <h4>Wear Medium Clothing!</h4>
           <div className="my-2">
             Under these conditions, the likelihood of hypothermia and frostbite can be higher. A heavier coat is recommended, and it should be <u>water-resistant or waterproof.</u> This means water will roll off
             instead of setting into your clothes. This includes your jacket, hat, and gloves. You may want to consider snow pants, as these will be waterproof and are generally very warm.
@@ -36,7 +36,7 @@ function Dress(props) {
     case 3:
       return(
         <div>
-          <h4>Heavy Clothing</h4>
+          <h4>Wear Heavy Clothing!</h4>
           <div className="my-2">
             Under these conditions, you are very likely to become hypothermic very quickly if you do not dress properly. We recommend wearing <u>at least</u> this much clothing, and please dress in layers.
             Dressing in layers can help you remain warmer, but also strip off some clothing when you are exerting yourself.

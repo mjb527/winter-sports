@@ -8,13 +8,13 @@ function SportContent(props) {
   const sport = props.sport;
   const rawSportData = props.sportData;
 
-  const component = getComponents(rawSportData)
+  const component = getComponents(rawSportData);
 
   // const sportData = buildHTML(rawSportData);
 
   return(
-    <div>
-      <h2 className={classes}>Learn to {sport}</h2>
+    <div className="mx-3 mb-2">
+      <h2 className={classes + " mb-4 mt-2"}><u>Learn To {sport}!</u></h2>
       {component}
     </div>
   );
@@ -24,7 +24,10 @@ function SportContent(props) {
 // and convert it to html
 function buildHTML(lines) {
 
-  return lines;
+  let built_html = "";
+  for(const l of lines) built_html += l;
+
+  return built_html;
 
 }
 

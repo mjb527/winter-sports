@@ -1,7 +1,10 @@
 {
   "sports" : {
     "ski" : {
-      "history" : "<p>skiing history</p>",
+      "history" : [
+        "<p>skiing history</p>",
+        "<p>test 123</p>" 
+      ],
       "equipment" : [
         "Skis",
         "Ski Boots and Bindings",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BannerTextLG, BannerTextSM } from './bannerText';
+import { BannerTextLG, BannerTextSM, BannerTextXS } from './bannerText';
 
 function HomeBanner() {
 
@@ -14,6 +14,7 @@ function HomeBanner() {
         <img src="/imgs/banner.png " alt="Winter view" className="img-fluid w-100"/>
         <BannerTextLG />
         <BannerTextSM />
+        <BannerTextXS />
 
       </div>
 

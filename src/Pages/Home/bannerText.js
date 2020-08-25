@@ -19,7 +19,7 @@ function BannerTextLG() {
 
 function BannerTextSM() {
   return(
-    <Media query="(max-width: 550px)" render={() => (
+    <Media query="(max-width: 550px) and (min-width: 346px)" render={() => (
       <div className="position-absolute rounded transparent-dark text-white text-left mx-3 w-75">
         <div className="py-1 px-4">
           <h4>Learn to Love the Cold!</h4>
@@ -33,7 +33,21 @@ function BannerTextSM() {
   );
 }
 
+function BannerTextXS() {
+  return(
+    <Media query="(max-width: 345px)" render={() => (
+      <div className="position-absolute rounded transparent-dark text-white text-left mx-3 w-75">
+        <div className="py-1 px-4 text-center">
+          <h5>Learn to Love the Cold!</h5>
+        </div>
+
+      </div>
+    )} />
+  );
+}
+
 export {
   BannerTextLG,
-  BannerTextSM
+  BannerTextSM,
+  BannerTextXS
 }
