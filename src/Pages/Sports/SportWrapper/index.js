@@ -45,9 +45,9 @@ function getSportComponent(mySport) {
     case mySport = 'ski':
       return require('../../../components/Sports/ski');
     case mySport = 'snowboard':
-      return require('../../../components/Sports/ski');
-    case mySport = 'iceskating':
-      return require('../../../components/Sports/ski');
+      return require('../../../components/Sports/snowboard');
+    case mySport = 'iceskate':
+      return require('../../../components/Sports/iceskate');
     default:
       return null;
 

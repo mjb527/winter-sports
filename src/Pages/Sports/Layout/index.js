@@ -1,3 +1,5 @@
+// create the two parts of the screen if the sport exists, otherwise return the 404 for sports
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 

@@ -15,23 +15,29 @@ function History() {
   return(
     <SportHistory content={content} />
   )
-  
+
 }
 
 function Learn() {
-  const content = <div></div>;
+  const content = <div>How to ski coming soon!</div>;
   return(
-    <SportLearn content={content} />
+    <SportLearn content={content} sport="Ski"/>
   );
 }
 
-function Clothes() {
+function Dress() {
+  const equipment = [
+    "Skis",
+    "Ski Boots and Bindings",
+    "Helmet (optional, but highly recommended)",
+    "Ski poles (optional)"
+  ];
   return (
       <div>
-        <SportEquipment equipment={null} />
-        <SportDress dress_level="3"/>;
+        <SportEquipment equipment={equipment} />
+        <SportDress dress_level="3" />
       </div>
   )
 }
 
-export { History, Learn, Clothes };
+export { History, Learn, Dress };

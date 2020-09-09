@@ -12,7 +12,7 @@ function SportContent(props) {
 // TODO: add color to my h3
   return(
     <div>
-      <h3 className="">Learn to {sport}!</h3>
+      <h2 className="mb-4"><u>Learn to {sport}!</u></h2>
       {sportData()}
     </div>
   );

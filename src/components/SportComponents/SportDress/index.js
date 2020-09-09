@@ -2,7 +2,9 @@ import React from 'react';
 
 function Dress(props) {
 
-  switch (props.dress_level) {
+  const { dress_level } = props;
+
+  switch (parseInt(dress_level)) {
     case 1:
       return(
         <div>
@@ -72,7 +74,7 @@ function Dress(props) {
             get wet (gloves, socks, hat, etc.). If you get wet and do not have a replacement for that article of clothing, you should get to a warm, dry place as soon as possible to dry the clothing.
           </div>
         </div>
-      );
+      )
 
     default:
       return(

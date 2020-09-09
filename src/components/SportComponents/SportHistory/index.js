@@ -2,9 +2,9 @@ import React from 'react';
 
 // used for oganization and proper styling
 function SportHistory(props) {
-  console.log('howdy howdy');
   return (
     <div>
+    <h4>History</h4>
       {props.content}
     </div>
   )

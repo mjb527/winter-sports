@@ -21,9 +21,9 @@ function SportDir(props) {
     <h4 className="mt-2 ml-4"><u>{sport} Topics</u></h4>
 
     <ul>
-      <li className="pointer"><h6 role="button" onClick={() => action('history')}>History</h6></li>
-      <li className="pointer"><h6 role="button" onClick={() => action('basics')}>Basics</h6></li>
-      <li className="pointer"><h6 role="button" onClick={() => action('dress_level')}>How To Dress</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('History')}>History</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('Learn')}>Basics</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('Dress')}>How To Dress</h6></li>
     </ul>
     </div>
 
