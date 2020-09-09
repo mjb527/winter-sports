@@ -7,6 +7,7 @@ import Donate from './Pages/Donate/donate';
 import Sport from './Pages/Sports/Layout/index';
 import Home from './Pages/Home/home';
 import PageNotFound from './Pages/PageNotFound';
+import Learn from './Pages/Learn'
 
 // components
 import Nav from './components/Nav/nav';
@@ -19,18 +20,11 @@ function App() {
       <Nav />
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/donate">
-            <Donate />
-          </Route>
-          <Route exact path="/sports/:sport">
-            <Sport />
-          </Route>
-          <Route>
-            <PageNotFound />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/donate" component={Donate} />
+          <Route exact path="/sports/:sport" component={Sport} />
+          <Route exact path="/learn" component={Learn} />
+          <Route component={PageNotFound} />
         </Switch>
       <Footer />
 

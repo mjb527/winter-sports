@@ -2,35 +2,56 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import SportContent from './sport-content';
 import SportDir from './sport-dir';
-import { sports as SportsData } from "../sports.json";
-
 
 function SportWrapper() {
 
-  const [ pageState, setPageState ] = useState( 'history' );
+  // set state with default as history
+  const [ pageState, setPageState ] = useState( 'History' );
 
+  // get the sport from the url
   let { sport } = useParams();
-  const sport_data = SportsData[sport];
+
+  // get the appropriate component based on the sport param
+  const SportComponent = getSportComponent(sport);
+  console.log(SportComponent.History);
+
+  // adjust sport to be Capitalized
   sport = sport[0].toUpperCase() + sport.substring(1);
 
+  // handle clicks in our 'directory'
   function handler(newPageState) {
     setPageState(newPageState);
   }
 
   // create a default of 'history'
   useEffect( () => {
-    setPageState( 'history' );
+    setPageState( 'History' );
   }, []);
 
   // largely useless but can prevent premature renders
-  if(pageState !== {})
+  if(pageState)
+    // return components
     return (
       <div className="row" style={{ "minHeight": "100vh", "overflowY": "scroll" }}>
         <div className="col-md-3 col-sm-12"><SportDir sport={sport} action={handler}/></div>
-        <div className="col-md-9 col-sm-12"><SportContent sport={sport} sportData={sport_data[pageState]} /></div>
+        <div className="col-md-9 col-sm-12"><SportContent sport={sport} sportData={SportComponent[pageState]} /></div>
       </div>
 
     );
+}
+
+function getSportComponent(mySport) {
+  switch (mySport) {
+    case mySport = 'ski':
+      return require('../../../components/Sports/ski');
+    case mySport = 'snowboard':
+      return require('../../../components/Sports/ski');
+    case mySport = 'iceskating':
+      return require('../../../components/Sports/ski');
+    default:
+      return null;
+
+  }
 }
 
 export default SportWrapper;

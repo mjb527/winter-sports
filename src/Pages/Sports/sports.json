@@ -2,8 +2,9 @@
   "sports" : {
     "ski" : {
       "history" : [
-        "<p>skiing history</p>",
-        "<p>test 123</p>" 
+        "<p>Skiing was invented independently all around the world by several ancient cultures, including Eastern Russia, Southern Mongolia, and modern-day North-East China. Cultures across the globe have skiied for thousands of years, with ski fragments dating as far back as 6300 BCE in Russia. However there is debate as to when people first began to ski. Modern skiing has its origins in ancient Scandanavia, where the Norse people used it as a form of travel. In fact, the word \"ski\" comes from old Norse word for \"stick of wood\". Skis were used to help save energy during times of heavy snowfall, when travel could be exhausting.</p>",
+        "<p>Skiing as a recreational activity is much more modern than its utilitarian origins. Modern skiing dates back to 1767, with the Danish, Norweigan, and Swedish militaries using them. During the 19th century, the sport had evolved from purely military, to a competition sport. Noteworthy dates are the first ski jumper, Olaf Rye, in 1809; the first North American ski club, called the Nansen Ski Club, in 1872; and 1884, when the first purely cross-country skiing event occured in Trondheim, Norway. </p>",
+        "<p></p>"
       ],
       "equipment" : [
         "Skis",

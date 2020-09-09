@@ -29,7 +29,6 @@ module.exports = {
       "url": "https://www.worldwildlife.org/",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/WWF_logo_%28Text_only%29.svg/262px-WWF_logo_%28Text_only%29.svg.png"
     },
-
   ]
 
 }
