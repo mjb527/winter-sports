@@ -1,14 +1,13 @@
 import React from 'react';
-import '../sportcomponents.css';
 
 // used for oganization and proper styling
-function SportHistory(props) {
+function SportTerms(props) {
   return (
     <div>
-    <h4>History</h4>
+      <h4>Learn how to {props.sport}</h4>
       {props.content}
     </div>
   )
 }
 
-export default SportHistory;
+export default SportTerms;
