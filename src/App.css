@@ -11,6 +11,10 @@ body {
   color: #88c9f9;
 }
 
+a.text-blue:hover {
+  color: #88c9f9;
+}
+
 .text-blue-med {
   color: #0099cc;
 }

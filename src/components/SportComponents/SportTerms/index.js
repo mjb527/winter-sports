@@ -4,7 +4,7 @@ import React from 'react';
 function SportTerms(props) {
   return (
     <div>
-      <h4>Learn how to {props.sport}</h4>
+      <h4>props.sport} - Good to know terms</h4>
       {props.content}
     </div>
   )
