@@ -1,4 +1,5 @@
 import React from 'react';
+import TermImg from './term-img';
 
 function ImgAndCaption(props) {
 
@@ -7,14 +8,12 @@ function ImgAndCaption(props) {
   const { definition, img, readings } = props.term;
 
   return(
-    <div className="ml-4">
-      <strong>{name}</strong>
-      <p>{definition}</p>
-      { () => { if(img) return <img src={img} alt={name + " example"} /> }}
-      { () => { if(readings) readings.map( reading => {
-          return <a href={reading.href}>{reading.title}</a>
-        })
-      }}
+    <div className="ml-4 border-bottom py-2">
+      <strong>&#x2744; {name}</strong>
+      <div>{definition}</div>
+      <TermImg name={name} img={img} />
+      { readings.map( reading => <a className="text-blue" href={reading.href}>{reading.title}</a>) }
+
     </div>
   );
 }
