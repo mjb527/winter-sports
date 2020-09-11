@@ -60,9 +60,44 @@ function Dress() {
 }
 
 function Terms() {
-  const content = <div></div>
+  const terms = {
+    'Equipment' : {
+        'Skis': {
+          'definition': 'Originally a plank of wood strapped to the feet, skis were used primarily for travel over ice and deep snow for much of their history. Today, they are made of a variety of materials, including wood, fiberglass, aluminum, and steel. Unlike in years passed, they are mainly used for recreation today.',
+          'img': null,
+          /*
+            readings should include href, title of reading:
+             >> readings: [{href: '', title: ''}]
+          */
+          'readings': null
+        },
+        'Ski Boots': {
+          'definition': 'Warm, tall boots that strap into ski bindings. Better boots are more responsive and allow better feel and control. Ski boots will be tight, and will likely hurt a bit when you first are getting used to them.',
+          'img': null,
+          'readings': null
+        },
+        'Bindings': {
+          'definition': 'Bindings allow you to snap into your skis with ski boots. They need to be properly installed and adjusted. It is recommended you bring your skis and boots to a professional to install them and adjust them to your boots, or you could lose the ski in the event of a fall or even a turn. Bindings also have brakes, which pop down when the boot is off. When you put the boot on, this brake will pop up as to not affect your ability to ski.',
+          'img': null,
+          'readings': null
+        },
+        'Ski Poles': {
+          'definition': 'Generally made of aluminum, poles can help you move around and "plant" yourself for sharper turns. They are not necessary and many skiiers opt not to use them. For certain sports, like ski jumping, they are a bad idea as it can become a hazard. For other ski sports, such as cross-country skiing, they are absolutely necessary. Downhill skiiers can choose to use them or not, however.',
+          'img': null,
+          'readings': null
+        },
+        'Helmet': {
+          'definition': 'Do we need to define "helmet"? Maybe we should tell you why you should wear one instead. While a helmet may not prevent a concussion, as a concussion is from your brain bouncing against your skull, it can help lessen the risk of one and can certainly keep you from severly damaging your head in the event of a crash or hard fall. They are padded and insulated, come in a variety of colors, and can be customized with stickers :) . While some skiiers, especially veteran skiiers, opt out of using a helmet and wear a warm hat instead, we highly recommend you wear one!',
+          'img': null,
+          'readings': null
+        }
+      },
+      'Parts of the Ski': {
+
+      }
+    }
   return(
-    <SportTerms content={content} />
+    <SportTerms terms={terms} />
   )
 }
 

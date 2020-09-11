@@ -24,6 +24,7 @@ function SportDir(props) {
       <li className="pointer"><h6 role="button" onClick={() => action('History')}>History</h6></li>
       <li className="pointer"><h6 role="button" onClick={() => action('Learn')}>Basics</h6></li>
       <li className="pointer"><h6 role="button" onClick={() => action('Dress')}>How To Dress</h6></li>
+      <li className="pointer"><h6 role="button" onClick={() => action('Terms')}>Good to Know Terms</h6></li>
     </ul>
     </div>
 
